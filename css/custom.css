@@ -1,0 +1,314 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 100px;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  /*padding: 8rem 0 7rem;*/
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header {
+  background-color: #DDD;
+  padding: 2rem 0 2rem;
+}
+
+.header .logo{text-indent:-999em;height:99px;width:306px;margin:10px 0;overflow:hidden;}
+
+.styled-select.black.rounded {
+  margin: 60px 0 15px 0;
+  float: right;
+}
+.header .logo {
+  display: inline-block;
+  background: url('../images/logo.png') no-repeat;
+}
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  height: 700px;
+}
+.section.hero {
+  background-image: url('../images/background.png');
+  background-size: auto 900px;
+  background-position: left top;
+}
+.hero-heading {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  background-color: #E7A1B0;
+  max-width: 80%;
+  display: inline-block;
+  padding: 0 5px 0 5px;
+}
+
+.hero-handwrite {
+  font-family: "Noteworthy";
+  font-weight: light;
+  letter-spacing: 1px;
+}
+
+.hero-right {
+    padding: 20rem 0 30rem;
+}
+
+.icon {
+  margin: 10% auto; 
+  overflow: hidden;
+}
+
+.download {
+  margin: 20px auto 0px;
+}
+
+.slide {
+  text-indent:-999em;
+  background-image: url('../images/picture.png');
+}
+
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+  }
+.banner .dots li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin:  4px;
+  
+  text-indent: -999em;
+  
+  border: 2px solid #fff;
+  border-radius: 6px;
+  
+  cursor: pointer;
+  opacity: .4;
+  
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+  background: #fff;
+  opacity: 1;
+}
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer {
+  padding: 8rem 0 3rem;
+  background-color: #333036;
+  background-size: cover;
+  color: #fff;
+  height:auto;
+}
+.value-multiplier {
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.value-heading {
+  font-size: 1.5rem;
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+.claim {
+  text-align: center;
+}
+
+.one-fouth.column { 
+  font-size: 12px;
+  width: 50%; 
+}
+
+/* Help
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.get-help {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  color: #fff;
+}
+.categories .section-description { 
+  margin-bottom: 4rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section.hero {
+    background-image: url('../images/background.png');
+  }
+
+/*  .section {
+    padding: 12rem 0 11rem;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }*/
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .phone + .phone {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+  .one-fouth.column { 
+    width: 46%; 
+    margin-left: 0%;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+/*  .hero {
+    height: 190px;
+  }*/
+    .hero-heading {
+    font-size: 2.0rem;
+  }
+/*  .section {
+    padding: 14rem 0 15rem;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }*/
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+  .one-fouth.column:first-child {
+    margin-left: 5%;
+  }
+  .one-fouth.column { 
+    margin-left: 1%;
+    font-size: 12px;
+    width: 23%;
+  }
+  .value-heading {
+    font-size: 2rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+/*  .section {
+    padding: 20rem 0 19rem;
+  }
+  .hero {
+    padding: 18rem 0 30rem;
+  }*/
+
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
+  }
+   .one-fouth.column:first-child {
+    margin-left: 5%;
+  }
+  .one-fouth.column { 
+    width: 23%;
+    font-size: 14px;
+  }
+}
+
+/*
+Select CSS
+*/
+
+.styled-select {
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  height: 29px;
+  overflow: hidden;
+  width: 130px;
+  text-align: center;
+}
+.styled-select select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 150px;
+  text-align: center;
+}
+.styled-select.slate {
+  background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+  height: 34px;
+  width: 240px;
+}
+
+.styled-select.slate select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 34px;
+  width: 268px;
+}
+/* -------------------- Rounded Corners */
+.rounded {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.black {
+  background-color: #CCC;
+  color: white;
+}
+
+
+
