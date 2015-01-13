@@ -43,7 +43,7 @@
 }
 .section.hero {
   background-image: url('../images/background.png');
-  background-size: auto 900px;
+  background-size: cover;
   background-position: left top;
 }
 .hero-heading {
