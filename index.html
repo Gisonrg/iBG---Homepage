@@ -11,7 +11,7 @@
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,7 +28,8 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/unslider.js"></script>
   <script type="text/javascript" src="js/home.js"></script>
-
+  <link rel="stylesheet" href="css/drop-theme-arrows.css" />
+  <script src="js/drop.min.js"></script>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="favicon.png">
@@ -42,14 +43,14 @@
     <div class="container">
       <div class="row">
         <div class="logo">iBeautyGuru</div>
-        <div class="styled-select black rounded">
-        <select class="language" name="" id="">
-          <option value="">Singapore</option>
-          <option value="">Malaysia</option>
-          <option value="">Vietnam</option>
-          <option value="">Indonesia</option>
-          <option value="">Thailand</option>
-        </select>
+        <button class="drop-target">Singapore</button>
+        <div class="drop-content">
+            <ul>
+                <li><span>Malaysia</span></li>
+                <li><span>Vietnam</span></li>
+                <li><span>Indonesia</span></li>
+                <li><span>Thailand</span></li>
+            </ul>
         </div>
       </div>
     </div>
@@ -117,4 +118,13 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+<script type="text/javascript">
+    var drop;
+    drop = new Drop({
+      target: document.querySelector('.drop-target'),
+      content: document.querySelector('.drop-content'),
+      position: 'bottom center',
+      openOn: 'click'
+    });
+</script>
 </html>
