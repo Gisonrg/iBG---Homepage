@@ -15,6 +15,10 @@
   margin-bottom: 1.2rem;
 }
 
+.one-half.column {
+  margin: auto;
+}
+
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header {
@@ -35,7 +39,7 @@
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
-  height: 700px;
+  height: 600px;
 }
 .section.hero {
   background-image: url('../images/background.png');
@@ -61,7 +65,7 @@
 }
 
 .hero-right {
-    padding: 20rem 0 30rem;
+    padding: 15rem 0 0rem 5rem;
 }
 
 .icon {
@@ -74,11 +78,10 @@
 }
 
 .slide {
-  text-indent:-999em;
-  background-image: url('../images/picture.png');
+  max-width: 550px;
 }
 
-.banner { position: relative; overflow: auto; }
+.banner { position: relative; overflow: auto;}
 .banner li { list-style: none; }
 .banner ul li { float: left; }
 
@@ -96,9 +99,8 @@
   
   text-indent: -999em;
   
-  border: 2px solid #fff;
   border-radius: 6px;
-  
+  background-color: #A09F9F;
   cursor: pointer;
   opacity: .4;
   
@@ -107,13 +109,14 @@
   transition: background .5s, opacity .5s;
 }
 .banner .dots li.active {
-  background: #fff;
+  background: #17B0FD;
   opacity: 1;
+  border: none;
 }
 /* footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer {
-  padding: 8rem 0 3rem;
+  padding: 3rem 0 3rem;
   background-color: #333036;
   background-size: cover;
   color: #fff;
