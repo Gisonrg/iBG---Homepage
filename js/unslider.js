@@ -27,7 +27,7 @@
 			complete: f,    // invoke after animation (function with argument)
 			items: '>ul',   // slides container selector
 			item: '>li',    // slidable items selector
-			easing: 'swing',// easing function to use for animation
+			easing: 'linear',// easing function to use for animation
 			autoplay: true  // enable autoplay on initialisation
 		};
 
