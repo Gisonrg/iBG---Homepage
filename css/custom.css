@@ -26,21 +26,59 @@
   padding: 2rem 0 2rem;
 }
 
-.header .logo{text-indent:-999em;height:99px;width:306px;margin:10px 0;overflow:hidden;}
+.header .logo{text-indent:-999em;height:49px;width:150px;margin:10px 0;overflow:hidden;}
 
-.styled-select.black.rounded {
-  margin: 60px 0 15px 0;
-  float: right;
-}
 .header .logo {
   display: inline-block;
   background: url('../images/logo.png') no-repeat;
+  background-size: cover;
 }
+
+/* Dropdown menu */
+.drop-target {
+  float: right;
+  margin-top: 23px;
+  padding: 0 10px;
+}
+
+.drop-content>ul>li {
+  list-style: none;
+  height: 38px;
+  padding: 0 10px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; 
+  margin: 0 auto;
+}
+
+
+.drop-content>ul>li:hover {
+  background-color: #DDD;
+  color: white;
+}
+
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
-  height: 600px;
+  height: 100%;
 }
+
+.container.hero {
+  width: 100%;
+  margin: 0;
+}
+
 .section.hero {
   background-image: url('../images/background.png');
   background-size: cover;
@@ -65,7 +103,11 @@
 }
 
 .hero-right {
-    padding: 8rem 0 0rem 5rem;
+    padding: 8rem 0 0rem 0rem;
+}
+
+.describe {
+  width: 280px;
 }
 
 .icon {
@@ -79,6 +121,11 @@
 
 .slide {
   max-width: 550px;
+  overflow: hidden;
+}
+
+.slide-img {
+  width: 380px;
 }
 
 .banner { position: relative; overflow: auto;}
@@ -165,36 +212,50 @@
   .section.hero {
     background-image: url('../images/background.png');
   }
+  .container.hero {
+    width: 85%;
+    margin: auto;
+  }
+  .header .logo{text-indent:-999em;height:99px;width:306px;margin:10px 0;overflow:hidden;}
 
-/*  .section {
-    padding: 12rem 0 11rem;
+  .header .logo {
+    display: inline-block;
+    background: url('../images/logo.png') no-repeat;
+    background-size: cover;
   }
   .hero {
-    padding-bottom: 12rem;
-    text-align: left;
-    height: 165px;
-  }*/
-  .phone {
-    position: absolute;
-    top: -7rem;
-    right: 3rem;
-    max-height: 362px;
-    z-index: 3;
+    height: 600px;
   }
-  .phone + .phone {
-    top: -6rem;
-    display: block;
-    max-width: 73.8%;
-    right: 0;
-    z-index: 2;
-    max-height: 338px;
+  .hero-right {
+    padding: 8rem 0 0rem 5rem;
   }
+
+  .drop-target {
+    float: right;
+    margin-top: 50px;
+    padding: 0 30px;
+  }
+
+  .drop-content>ul>li {
+    padding: 0 30px;
+  }
+  .slide {
+    overflow: none;
+  }
+  .slide-img {
+    width: 500px;
+  }
+
   .hero-heading {
     font-size: 2.4rem;
   }
   .one-fouth.column { 
     width: 46%; 
     margin-left: 0%;
+  }
+
+  .describe {
+    width: 400px;
   }
 }
 
@@ -217,18 +278,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .phone {
-    top: -14rem;
-    right: 5rem;
-    max-height: 510px;
-  }
-  .phone + .phone {
-    top: -12rem;
-    max-height: 472px;
-  }
-  .categories {
-    padding: 15rem 0 8rem;
-  }
+
   .one-fouth.column:first-child {
     margin-left: 5%;
   }
@@ -244,21 +294,6 @@
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
-/*  .section {
-    padding: 20rem 0 19rem;
-  }
-  .hero {
-    padding: 18rem 0 30rem;
-  }*/
-
-  .phone {
-    top: -16rem;
-    max-height: 615px;
-  }
-  .phone + .phone {
-    top: -14rem;
-    max-height: 570px;
-  }
    .one-fouth.column:first-child {
     margin-left: 5%;
   }
@@ -268,34 +303,4 @@
   }
 }
 
-.drop-target {
-  float: right;
-  margin-top: 50px;
-}
-
-.drop-content>ul>li {
-  list-style: none;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: white;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; 
-  margin: 0 auto;
-}
-
-.drop-content>ul>li:hover {
-  background-color: #DDD;
-  color: white;
-}
 
