@@ -30,7 +30,7 @@
 
 .header .logo {
   display: inline-block;
-  background: url('../images/logo.png') no-repeat;
+  background: url('../images/logo4.png') no-repeat;
   background-size: cover;
 }
 
@@ -218,11 +218,6 @@
   }
   .header .logo{text-indent:-999em;height:99px;width:306px;margin:10px 0;overflow:hidden;}
 
-  .header .logo {
-    display: inline-block;
-    background: url('../images/logo.png') no-repeat;
-    background-size: cover;
-  }
   .hero {
     height: 600px;
   }
