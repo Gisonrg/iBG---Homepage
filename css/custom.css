@@ -22,7 +22,8 @@
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header {
-  background-color: #DDD;
+  /*background-color: #DDD;*/
+  background-color: #0D284A;
   padding: 2rem 0 2rem;
 }
 
@@ -39,6 +40,17 @@
   float: right;
   margin-top: 23px;
   padding: 0 10px;
+  color: white;
+}
+
+.drop-target:hover {
+  background-color: white;
+  color: black;
+}
+
+.drop-target:active {
+  background-color: white;
+  color: black;
 }
 
 .drop-content>ul>li {
@@ -79,11 +91,11 @@
   margin: 0;
 }
 
-.section.hero {
+/*.section.hero {
   background-image: url('../images/background.png');
   background-size: cover;
   background-position: left top;
-}
+}*/
 .hero-heading {
   color: white;
   font-style: italic;
@@ -107,7 +119,7 @@
 }
 
 .describe {
-  width: 280px;
+  width: 300px;
 }
 
 .icon {
@@ -209,9 +221,7 @@
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
-  .section.hero {
-    background-image: url('../images/background.png');
-  }
+
   .container.hero {
     width: 85%;
     margin: auto;
