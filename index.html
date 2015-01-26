@@ -15,21 +15,26 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!--   <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'> -->
-
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
-
+  <link rel="stylesheet" href="css/responsive-nav.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
+ <link rel="stylesheet" href="css/drop-theme-arrows.css" />
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/unslider.js"></script>
   <script type="text/javascript" src="js/home.js"></script>
-  <link rel="stylesheet" href="css/drop-theme-arrows.css" />
   <script src="js/drop.min.js"></script>
+  <script src="js/responsive-nav.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="favicon.png">
@@ -39,11 +44,11 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="header">
+  <div class="header"  id="home">
     <div class="container">
       <div class="row">
         <div class="logo">iBeautyGuru</div>
-        <button class="drop-target">Singapore</button>
+        <!-- <button class="drop-target">Singapore</button>
         <div class="drop-content">
             <ul>
                 <li><span>Malaysia</span></li>
@@ -51,12 +56,20 @@
                 <li><span>Indonesia</span></li>
                 <li><span>Thailand</span></li>
             </ul>
-        </div>
+        </div> -->
+        <nav class="nav-collapse">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+        
       </div>
     </div>
   </div>
 
-  <div class="section hero">
+  <div class="section hero ">
     <div class="container hero">
       <div class="row">
         <div class="one-half column slide">
@@ -76,7 +89,7 @@
               <img src="images/download_andriod.png" class="download" alt="" width="180px">
             </div>
             <div class="one-half column">
-              <img src="images/code.png" alt="" width="200">
+              <img src="images/code.png" alt="" width="180px">
             </div>
           </div>
         </div>
@@ -84,9 +97,58 @@
     </div>
   </div>
 
+  <section id="about">
+      <div class="container">
+      <h3 class="section-heading">Meet the founders</h3>
+      <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi debitis possimus repudiandae asperiores amet corporis aperiam vitae porro, est sed repellat odit assumenda laborum tempore accusamus suscipit provident facilis rerum.</p>
+      <div class="row">
+        <div class="one-half column about">
+          <img class="u-max-full-width" src="images/placeholder.png">
+          <div class="about-name">NAME HERE</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta et sunt nostrum cumque quasi reprehenderit amet ea molestiae at modi atque, eligendi suscipit, ipsa? Illum saepe alias architecto eaque ex!</p>
+        </div>
+        <div class="one-half column about">
+          <img class="u-max-full-width" src="images/placeholder.png">
+          <div class="about-name">NAME HERE</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ea ut fugit! Doloribus nesciunt culpa, corporis non eos optio eveniet, dolor sapiente, delectus assumenda cum laboriosam, fugit quis est ea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+      <div class="container">
+        <div class="row">
+          <h3 class="section-heading">Connect with us</h3>
+          <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi debitis possimus repudiandae asperiores amet corporis aperiam vitae porro, est sed repellat odit assumenda laborum tempore accusamus suscipit provident facilis rerum.</p>
+          <div class="one-fouth column value">
+            <img src="images/media.svg" alt="" height="150px">
+            <h5 class="value-heading">MEDIA</h5>
+            <p class="value-description"><a href="mailto:pr@ibeautyguru.com">Get in touch!</a></p>
+          </div>
+          <div class="one-fouth column value">
+            <img src="images/marketing.svg" alt="" height="150px">
+            <h5 class="value-heading">MARKETING</h5>
+            <p class="value-description"><a href="mailto:market@ibeautyguru.com">Get in touch!</a></p>
+          </div>
+          <div class="one-fouth column value">
+            <img src="images/business.svg" alt="" height="150px">
+            <h5 class="value-heading">BUSINESS</h5>
+            <p class="value-description"><a href="https://docs.google.com/forms/d/15eULZGW1vffcbWboZptCGmed3_ZCziDLYuJ17KBmvPE/viewform?c=0&w=1">Get in touch!</a></p>
+          </div>
+          <div class="one-fouth column value">
+            <img src="images/job.svg" alt="" height="150px">
+            <h5 class="value-heading">JOB</h5>
+            <p class="value-description">
+            <a href="mailto:pr@ibeautyguru.com">Get in touch!</a></p>
+          </div>
+        </div>
+      </div>
+  </section>
+
   <div class="footer">
     <div class="container">
-      <div class="row">
+      <!-- <div class="row">
         <div class="one-fouth column value">
           <h5 class="value-heading">MEDIA</h5>
           <p class="value-description">Contact<br>
@@ -107,7 +169,7 @@
           <p class="value-description">Contact<br>
           <a href="mailto:pr@ibeautyguru.com">pr@ibeautyguru.com</a></p>
         </div>
-      </div>
+      </div> -->
       <div class="claim">@2015 iBeautyGuru Pte Lt 201500035N Disclaimer</div>
     </div>
   </div>
@@ -118,13 +180,30 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+<script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+</script>
 <script type="text/javascript">
-    var drop;
-    drop = new Drop({
-      target: document.querySelector('.drop-target'),
-      content: document.querySelector('.drop-content'),
-      position: 'bottom center',
-      openOn: 'click'
-    });
+    // var drop;
+    // drop = new Drop({
+    //   target: document.querySelector('.drop-target'),
+    //   content: document.querySelector('.drop-content'),
+    //   position: 'bottom center',
+    //   openOn: 'click'
+    // });
 </script>
 </html>
