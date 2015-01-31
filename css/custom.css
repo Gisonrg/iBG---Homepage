@@ -150,7 +150,9 @@ section {
 }
 
 .slide-img {
-  width: 380px;
+  margin-top: 20px;
+  height: auto;
+  width: 300px;
 }
 
 .banner { position: relative; overflow: auto;}
@@ -305,7 +307,7 @@ section {
     overflow: none;
   }
   .slide-img {
-    width: 500px;
+    width: 300px;
   }
 
   .hero-heading {
